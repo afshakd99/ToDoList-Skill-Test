@@ -1,0 +1,163 @@
+body {
+    background-color: lightgray;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex-wrap: nowrap;
+    margin: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 50%;
+    padding: 2%;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+
+}
+
+#input {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 96%;
+    height: 30px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: lightgray;
+}
+
+#input:hover #addicon {
+    opacity: 1;
+
+}
+
+#textBox {
+    height: 90%;
+    width: 100%;
+    margin: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+
+}
+
+#list input:checked+label {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+#addicon {
+    height: 100%;
+    opacity: 0;
+
+}
+.taskEl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.delete {
+    height: 40px;
+    /* padding: 5px 0px; */
+    rotate: 45deg;
+    opacity: 0;
+
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    height:100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul li {
+    display: flex;
+    width: 100%;
+    margin: 2%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-all;
+    font-size: 18px;
+}
+
+
+.custom-checkbox{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: rgb(66, 68, 134);
+}
+
+ul li:hover {
+    background: #f3f3f3;
+
+}
+
+li:hover .delete {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+#footer {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    color: lightgrey;
+}
+#all:hover,#Uncomplete:hover,#Completed:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+.element-without-cursor-blinking {
+    caret-color: transparent;
+}
+
+#markTask{
+    margin: 2% 0%;
+    color: lightgray;
+    display: flex;
+    font-size: 0.8rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#clearCompleted:hover,#completeAllTasks:hover{
+    cursor: pointer;
+    color: black;
+}

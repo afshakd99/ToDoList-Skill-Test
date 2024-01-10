@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5aada8b116.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="input">
+            <i class="fa-solid fa-list" style="color: #121212;"></i>
+            <input type="text" id="textBox" placeholder="Type your to do list">
+            <img src="plus.svg" alt="" id="addicon" class="add">
+        </div>
+        <div id="markTask" class="element-without-cursor-blinking">
+            <span id="completeAllTasks">Complete all tasks</span>
+            <span id="clearCompleted">Clear completed</span>
+        </div>
+
+        <hr>
+        <ul id="list" class="element-without-cursor-blinking ">
+
+        </ul>
+        <hr>
+        <div id="footer">
+            <span><span id="taskCounter">0</span> tasks left</span> 
+            <span id="status" class="element-without-cursor-blinking "> <span id="all">All</span> <span id="uncomplete">Uncomplete</span> <span id="completed">Completed</span></span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
